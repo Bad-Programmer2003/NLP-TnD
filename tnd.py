@@ -13,7 +13,8 @@ print("Hey there,\n welcomr to TRUTH AND DARE")
 ### Taking Inputs ###
 t_or_d=input("BOT: What do you choose? Truth or dare?\nYOU:")
         ###remove whitespace and lowercase the imput###
-print(t_or_d.lower)
+t_or_d2 = t_or_d.lower()
+print(t_or_d2.lower)
 
 
 
@@ -22,10 +23,10 @@ def mid_game_function():
     ans=input("YOU:")
     print('lol..XD')
 
-if t_or_d=="truth":
+if t_or_d2=="truth":
     print("BOT: "+random.choice(Truth_and_dare_dictionary.truth))
     mid_game_function
-if t_or_d=="dare":
+if t_or_d2=="dare":
     print("BOT: "+random.choice(Truth_and_dare_dictionary.dare))
     mid_game_function
 else:
